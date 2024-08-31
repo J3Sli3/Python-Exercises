@@ -1,7 +1,16 @@
 def is_leap_year(year : int):
-    '''
+    """
     Takes an input year in int and determines whether if it is True that it is a leap year or False.
-    '''
+
+    examples:
+
+    >>> is_leap_year(2000)
+    'True'
+
+    >>> is_leap_year(1989)
+    'False'
+
+    """
     if year % 4 != 0:    
         return(False)             #If the year isn't divisible by 4 it is not a leap year.
     else:
@@ -14,4 +23,3 @@ def is_leap_year(year : int):
             else:
                 return(False)     #If the year is divisible by 4, 100 AND NOT 400, it isn't a leap year.
                 
-            
